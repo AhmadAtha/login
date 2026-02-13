@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "login";
-        header("Location: 226p");
+        header("Location: dashboard.php");
         exit();
     } else {
         $login_message = "Username atau Password salah!";
